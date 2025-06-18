@@ -1,0 +1,69 @@
+.flab-header-logo-title {
+    color: #fff;
+}
+
+.flab-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.flab-header-container .ant-menu-horizontal {
+    border-bottom: none !important;
+}
+
+.flab-header-logo {
+    width: 150px;
+}
+
+.flab-header-nav {
+    flex: 1;
+    text-align: center;
+}
+
+.flab-header-nav-menu {
+    width: 520px;
+    margin: 0 auto;
+    background-color: transparent;
+    color: white;
+    font-size: 16px;
+    
+}
+
+.flab-header-contact-us {
+    width: 150px;
+}
+
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected::after, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after {
+    border-bottom-color: transparent !important;
+    content: '';
+}
+
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-active, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-open, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item-selected, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-active, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-open, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected, 
+::ng-deep .flab-header-nav .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover, 
+::ng-deep .flab-header-nav .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-arrow, 
+::ng-deep .flab-header-nav .ant-menu-submenu:hover > .ant-menu-submenu-title > .ant-menu-submenu-expand-icon, 
+::ng-deep .flab-header-nav .ant-menu-vertical .ant-menu-submenu-selected, 
+::ng-deep .flab-header-nav .ant-menu-vertical-left .ant-menu-submenu-selected, 
+::ng-deep .flab-header-nav .ant-menu-vertical-right .ant-menu-submenu-selected {
+    color: #838b93;
+}
+
+.flab-header-contact-us-btn {
+    min-height: 50px;
+    border-radius: 55px;
+    font-size: 20px;
+    letter-spacing: .5px;
+}

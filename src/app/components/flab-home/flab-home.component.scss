@@ -1,0 +1,31 @@
+.bg-video-image {
+    position: absolute;
+    width: 100vw;
+}
+
+.bg-overlay {
+    height: 100vh;
+    position: relative;
+    top: 0;
+    width: 100vw;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.2)), 
+        linear-gradient(rgba(5, 40, 90, 0.35), rgba(0, 25, 50, 0.3)), 
+        linear-gradient(rgba(10, 25, 45, 0), #0a1b2d);
+}
+
+.flab-home-container {
+    position: relative;
+}
+
+.flab-video-wrapper {
+
+}
+
+.flab-video-wrapper video {
+    width: 100%;
+    object-fit: cover;
+    background-position: 50%;
+    background-size: cover;
+    height: 100vh;
+}
