@@ -3,11 +3,12 @@ import { RouterOutlet } from '@angular/router';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { FlabHeaderComponent } from './components/flab-header/flab-header.component';
 import { FlabHomeComponent } from './components/flab-home/flab-home.component';
+import { FlabResearchComponent } from './components/flab-research/flab-research.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NzLayoutModule, FlabHeaderComponent, FlabHomeComponent],
+  imports: [RouterOutlet, NzLayoutModule, FlabHeaderComponent, FlabHomeComponent, FlabResearchComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

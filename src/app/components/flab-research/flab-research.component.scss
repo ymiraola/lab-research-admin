@@ -1,0 +1,85 @@
+.research-cards-container .first-card-row [nz-card-grid] ,
+.research-cards-container .second-card-row [nz-card-grid] {
+    width: 47%;
+    margin: 0 2% 2% 2%;
+}
+
+.research-cards-container .first-card-row [nz-card-grid]:last-child {
+    margin: 0 2% 2% 0;
+}
+
+::ng-deep .ant-card-contain-grid.second-card-row .ant-card-body {
+    justify-content: center;
+}
+
+.research-cards-container {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.research-card h2 {
+    color: rgb(17 24 39);
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-bottom: 0.75rem;
+}
+
+ .research-card p {
+    color: rgb(75 85 99);
+ }
+
+ .research-card {
+    padding: 2rem;
+ }
+
+ .research-card svg {
+    color: rgb(37 99 235);
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: 1rem;
+}
+
+.flab-research {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: rgb(249 250 251);
+}
+
+.research-header {
+    margin-bottom: 4rem;
+    max-width: 51rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.research-header h1 {
+    color: rgb(17 24 39);
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.research-header p {
+    color: rgb(75 85 99);
+    line-height: 1.75rem;
+    font-size: 1.25rem;
+}
+
+.flab-research .ant-card {
+    background-color: rgb(249 250 251);
+    border: none;
+}
+
+.flab-research .ant-card-grid {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1);
+    border-radius: .5rem;
+}
+
+.flab-research .ant-card-grid:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / .1), 0 8px 10px -6px rgb(0 0 0 / .1);
+}
