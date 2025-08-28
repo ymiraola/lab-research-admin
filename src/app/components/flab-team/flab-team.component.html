@@ -1,21 +1,23 @@
-<div class="flab-team">
-    <div class="team-header">
-        <h1 class="team-title">Our Team</h1>
-        <p class="team-description">Meet the brilliant minds behind our groundbreaking research. Our diverse team of scientists, researchers, and medical professionals work collaboratively to push the boundaries of medical science.</p>
+<div class="flab-team-wrapper" id="people">
+    <div class="flab-team">
+        <div class="team-header">
+            <h1 class="team-title">Our Team</h1>
+            <p class="team-description">Meet the brilliant minds behind our groundbreaking research. Our diverse team of scientists, researchers, and medical professionals work collaboratively to push the boundaries of medical science.</p>
+        </div>
+        
+        <div nz-row [nzGutter]="60">
+            <ng-container *ngFor="let member of teamMembers">
+                <div nz-col nzLg="8" nzMd="12" nzSm="24">
+                    <div class="member-image-container">
+                        <img src="{{ member.image }}" />
+                        <div class="member-image-overlay"></div>
+                    </div>
+                    <h3 class="member-name">{{ member.name }}</h3>
+                    <p class="member-role">{{ member.role }}</p>
+                    <p class="member-education">{{ member.education }}</p>
+                    <p class="member-expertise">{{ member.expertise }}</p>
+                </div> 
+            </ng-container>
+        </div> 
     </div>
-    
-    <div nz-row [nzGutter]="60">
-        <ng-container *ngFor="let member of teamMembers">
-            <div nz-col nzLg="8" nzMd="12" nzSm="24">
-                <div class="member-image-container">
-                    <img src="{{ member.image }}" />
-                    <div class="member-image-overlay"></div>
-                </div>
-                <h3 class="member-name">{{ member.name }}</h3>
-                <p class="member-role">{{ member.role }}</p>
-                <p class="member-education">{{ member.education }}</p>
-                <p class="member-expertise">{{ member.expertise }}</p>
-            </div> 
-        </ng-container>
-    </div> 
 </div>

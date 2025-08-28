@@ -2,6 +2,14 @@
     color: #fff;
 }
 
+.flab-header-nav a {
+    color: white;
+}
+
+.flab-header-nav a:hover {
+    color: #838b93;
+}
+
 .flab-header-container {
     display: flex;
     align-items: center;
@@ -25,8 +33,7 @@
     margin: 0 auto;
     background-color: transparent;
     color: white;
-    font-size: 16px;
-    
+    font-size: 16px; 
 }
 
 .flab-header-contact-us {

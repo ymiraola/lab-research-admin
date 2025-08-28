@@ -1,5 +1,5 @@
 <nz-layout>
-  <nz-header class="flab-header">
+  <nz-header class="flab-header" [class.scrolled]="scrolled">
     <app-flab-header></app-flab-header>
   </nz-header>
   <nz-content>
@@ -7,5 +7,7 @@
     <app-flab-research></app-flab-research>
     <app-flab-team></app-flab-team>
   </nz-content>
-  <nz-footer>Footer</nz-footer>
+  <nz-footer>
+    <app-flab-footer></app-flab-footer>
+  </nz-footer>
 </nz-layout>

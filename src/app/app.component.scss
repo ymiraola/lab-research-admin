@@ -4,5 +4,27 @@
     z-index: 10;
     background: none;
     position: absolute;
-    width: calc(100vw - 50px);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100vw;
+}
+
+.flab-header.ant-layout-header.scrolled {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+::ng-deep .flab-header.ant-layout-header.scrolled .flab-header-nav-menu li,
+::ng-deep .flab-header.ant-layout-header.scrolled .flab-header-logo span,
+::ng-deep .flab-header.ant-layout-header.scrolled .flab-header-nav-menu a {
+    color:rgb(0, 24, 60);
+}
+
+::ng-deep .flab-header.ant-layout-header.scrolled .flab-header-contact-us button {
+    border-color: rgb(0, 55, 138);
+    will-change: background;
+    background-color: rgb(0, 55, 138);
+}
+
+.ant-layout-footer {
+    padding: 0;
 }
