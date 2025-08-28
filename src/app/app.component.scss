@@ -28,3 +28,14 @@
 .ant-layout-footer {
     padding: 0;
 }
+
+::ng-deep .flab-header.ant-layout-header.scrolled .flab-header-nav-responsive {
+    color:rgb(0, 24, 60);
+}
+
+@media (max-width: 990px) {
+    .flab-header.ant-layout-header {
+        height: 80px;
+        padding: 8px 32px;
+    }
+}

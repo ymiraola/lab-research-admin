@@ -1,5 +1,6 @@
 .flab-header-logo-title {
     color: #fff;
+    font-size: 22px;
 }
 
 .flab-header-nav a {
@@ -20,7 +21,7 @@
 }
 
 .flab-header-logo {
-    width: 150px;
+    width: 158px;
 }
 
 .flab-header-nav {
@@ -33,7 +34,7 @@
     margin: 0 auto;
     background-color: transparent;
     color: white;
-    font-size: 16px; 
+    font-size: 18px; 
 }
 
 .flab-header-contact-us {
@@ -73,4 +74,29 @@
     border-radius: 55px;
     font-size: 20px;
     letter-spacing: .5px;
+}
+
+.flab-header-nav-responsive {
+    display: none;
+    display: block;
+    color: white;
+    font-size: 22px;
+    line-height: 22px;
+    position: absolute;
+    right: 35px;
+}
+
+.flab-header-nav-responsive svg {
+    transform: scale(1.2);
+}
+
+@media (max-width: 990px) {
+    .flab-header-nav,
+    .flab-header-contact-us {
+        display: none;
+    }
+
+    .flab-header-nav-responsive {
+        display: block;
+    }
 }
