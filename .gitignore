@@ -1,0 +1,4 @@
+# Angular build and cache directories
+.angular/
+node_modules/
+dist/
