@@ -24,7 +24,32 @@
         <button nz-button nzType="default" class="flab-header-contact-us-btn" nzGhost>Contact Us</button>
     </div>
 
-    <div class="flab-header-nav-responsive">
+    <div class="flab-header-nav-responsive" (click)="openMenuDrawer()">
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-menu-icon lucide-square-menu"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M7 8h10"/><path d="M7 12h10"/><path d="M7 16h10"/></svg>
     </div>
 </div>
+
+<nz-drawer
+    [nzVisible]="menuDrawerVisible"
+    [nzPlacement]="'left'"
+    [nzClosable]="false"
+    [nzTitle]="menuTitleTpl"
+    [nzWidth]="'80vw'"
+    (nzOnClose)="closeMenuDrawer()"
+>
+    <ng-template #menuTitleTpl>
+        <div class="responsive-menu-title">The Franca Lab</div>
+        <div class="responsive-menu-close-btn" (click)="closeMenuDrawer()">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x-icon lucide-x"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+        </div>
+    </ng-template>
+
+    <ng-container *nzDrawerContent>
+        <div class="responsive-menu-el" (click)="closeMenuDrawer()"><a href="#home">Home</a></div>
+        <div class="responsive-menu-el" (click)="closeMenuDrawer()"><a href="#research">Research</a></div>
+        <div class="responsive-menu-el" (click)="closeMenuDrawer()"><a href="#people">People</a></div>
+        <div class="responsive-menu-el" (click)="closeMenuDrawer()">Publications</div>
+
+        <button nz-button nzType="default" class="flab-header-contact-us-btn responsive" nzGhost>Contact Us</button>
+    </ng-container>
+</nz-drawer>
